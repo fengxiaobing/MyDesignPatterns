@@ -27,9 +27,20 @@ public class ImageLoader {
     //UI Handler
   private   Handler mHandler = new Handler(Looper.getMainLooper());
 
+//创建私有构造函数
+    private ImageLoader() {
 
+    }
+private static class ImageLoaderHolder{
+        public static ImageLoader sInstance = new ImageLoader();
+}
 
-    public ImageLoader() {
+    /**
+     * 采用静态内部类方式
+     * @return
+     */
+    public static ImageLoader getInstance(){
+        return ImageLoaderHolder.sInstance;
     }
 
     public void setImageCache(ImageCache imageCache){
