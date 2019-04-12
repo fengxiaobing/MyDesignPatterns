@@ -1,3 +1,4 @@
 # MyDesignPatterns
 通过书写ImageLoader来熟悉面向对象的六大原则
 这里是测试git合并 冲突之类的
+这里是编译器提交
